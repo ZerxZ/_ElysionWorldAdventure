@@ -1,0 +1,8 @@
+:: Widgets Version Info [widget]
+<<widget "versioninfo">>
+<br><br>
+
+失乐园物语 <<print StartConfig.version>><br>
+一切都还只是个框架<br>
+
+<</widget>>

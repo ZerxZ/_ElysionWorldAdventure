@@ -1,0 +1,6 @@
+:: PassageHeader
+<<set $passage to passage()>><<set $tags to tags()>>
+<<time>>
+
+:: PassageFooter
+<div id="gameVersionDisplay">EWA ver<<print StartConfig.version>></div>

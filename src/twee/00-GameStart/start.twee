@@ -1,0 +1,60 @@
+:: StoryData
+{
+"ifid": "731DEBA3-F846-4AA9-97C0-8137F28469AC",
+"format": "SugarCube",
+"format-version": "2.23.4"
+}
+
+:: StoryTitle
+失乐园物语
+
+:: StoryBanner
+<img src="image/banner.png">
+
+:: StorySubtitle
+Elysion World Adventure
+
+:: Start [nosave]
+
+这是一个发生在名叫Elysion的星球的故事。<br>
+Elysion是一个类似现代——2021年地球的世界，虽然表面上平平无奇，实际上隐藏着各种超自然存在。<br>
+例如：超能力、幽灵、兽化人、魔鬼、修仙者等等……<br>
+<br>
+你本来是平平无奇的一员，但某天一觉醒来，你发现有什么发生在你身上了……<br>
+<br>
+你是<<textbox "$PC.name" "伪娘">>,新的故事即将开始……    <<link [[下一步|开始]]>><</link>>
+
+
+:: 开始
+
+你的名字是 $PC.name <br>
+怎么样？有变化了吗？
+
+
+
+<div id="Meter" class="Meter">
+    <<meterbar 45>>
+</div>
+
+
+:: 测试
+
+测试123456
+
+:: Meter [widget]
+
+<<widget "meterbar">>
+    <<if $args[0]>>
+        <<set _percent to $args[0]>>
+    <<else>>
+        <<set _percent to 100>>
+    <</if>>
+
+    <<if $args[1]>>
+        <<set _color to $args[1]>>
+    <<else>>
+        <<set _color to "#bbb">>
+    <</if>>
+
+    <<print '<div id="colorbar" style="width:' + _percent + '%;background-color:'+ _color + '"></div>'>>
+<</widget>>

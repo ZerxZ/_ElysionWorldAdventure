@@ -1,0 +1,44 @@
+﻿:: StoryInterface
+
+<div id="init-screen"></div>
+<div id="ui-overlay" class="ui-close"></div>
+<div id="ui-dialog" tabindex="0" role="dialog" aria-labelledby="ui-dialog-title">
+    <div id="ui-dialog-titlebar">
+        <h1 id="ui-dialog-title"></h1>
+        <button id="ui-dialog-close" class="ui-close" tabindex="0"></button>
+    </div>
+    <div id="ui-dialog-body"></div>
+</div>
+<div id="ui-bar">
+    <div id="ui-bar-tray">
+        <button id="ui-bar-toggle" tabindex="0"></button>
+        <div id="ui-bar-history">
+            <button id="history-backward" tabindex="0">←</button>
+            <button id="history-jumpto" tabindex="0">○</button>
+            <button id="history-forward" tabindex="0">→</button>
+        </div>
+    </div>
+    <div id="ui-bar-body">
+        <header id="title" role="banner">
+            <div id="story-banner"></div>
+            <h1 id="story-title"></h1>
+            <div id="story-subtitle"></div>
+            <div id="story-title-separator"></div>
+            <p id="story-author"></p>
+        </header>
+        <div id="story-caption"></div>
+        <nav id="menu" role="navigation">
+            <ul id="menu-story"><ul>
+            <ul id="menu-core">
+                <li id="menu-item-saves"><a tabindex="0">SAVE</a></li>
+                <li id="menu-item-settings"><a tabindex="0">SETTING</a></li>
+                <li id="menu-item-restart"><a tabindex="0">RESTART</a></li>
+                <li id="menu-item-share"><a tabindex="0">SHARE</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div id="story" role="main">
+    <div id="passages">
+    </div>
+</div>

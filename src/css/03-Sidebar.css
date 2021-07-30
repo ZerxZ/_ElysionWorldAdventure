@@ -1,0 +1,141 @@
+﻿
+#ui-bar {
+    background-color: #eee;
+    border-color: #ccc;
+}
+#ui-bar hr {
+    border-color: #ccc;
+}
+#ui-bar-toggle{
+    color: rgb(59, 58, 49);
+    border-color: rgb(219, 219, 211);
+}
+
+#ui-bar-history [id|="history"] {
+    color: #111;
+    border-color: #ccc;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  margin: 0px 30px 0px 30px;
+  text-align: center;
+}
+
+#ui-bar-toggle:hover{
+    background-color: #eee;
+    border-color: rgb(59, 58, 49);
+}
+
+#ui-bar-history [id|="history"]:hover {
+    background-color: #eee;
+    border-color: #111;
+}
+
+#ui-bar-history [id|="history"]:disabled {
+    color: rgb(219, 218, 200);
+    background-color: transparent;
+    border-color: rgb(204, 203, 190);
+}
+
+/* Default dialog styling */
+#ui-overlay {
+    background-color: #777;
+}
+#ui-dialog-titlebar {
+    background-color: #ccc;
+}
+#ui-dialog-close:hover {
+    background-color: #b44;
+    border-color: #a33;
+}
+#ui-dialog-body {
+    background-color: #fff;
+    border-color: #ccc;
+}
+#ui-dialog-body hr {
+    background-color: #ccc;
+}
+
+/* List-based dialog styling */
+#ui-dialog-body.list li:not(:first-child) {
+    border-top-color: #ccc;
+}
+#ui-dialog-body.list li a {
+    color: #111;
+}
+#ui-dialog-body.list li a:hover {
+    background-color: #ddd;
+    border-color: #111;
+}
+
+/* Saves dialog styling */
+#ui-dialog-body.saves > *:not(:first-child),
+#ui-dialog-body.saves tr:not(:first-child) {
+    border-top-color: #ccc;
+}
+#ui-dialog-body.saves .empty {
+    color: #777;
+}
+
+/* Settings dialog styling */
+#ui-dialog-body.settings button[id|="setting-control"] {
+    color: #111;
+    border-color: #ccc;
+}
+#ui-dialog-body.settings button[id|="setting-control"]:hover {
+    background-color: #ddd;
+    border-color: #111;
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled {
+    background-color: #9e9;
+    border-color: #7c7;
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled:hover {
+    background-color: #7c7;
+    border-color: #5a5;
+}
+
+
+#menu ul {
+    border-color: #ccc;
+}
+#menu li:not(:first-child) {
+    border-top-color: #ccc;
+}
+#menu li a {
+    color: #111;
+}
+#menu li a:hover {
+    background-color: #ddd;
+    border-color: #111;
+}
+
+
+#versioninfo ,#story-title {
+    position:relative;
+    z-index: 2;
+}
+  
+#story-title {
+    font-size: 40px;
+    line-height: 45px;
+    font-family: "筑紫古典";
+    color:rgb(88, 94, 43);
+    font-style: normal;
+}
+
+#story-subtitle {
+    font-size: 12px;
+    font-family: Georgia;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+#gameVersionDisplay {
+    position: fixed;
+    left: 2px;
+    bottom: 2px;
+    font-size: 8px;
+    color: rgb(177, 179, 160);
+    z-index: 1000;
+}

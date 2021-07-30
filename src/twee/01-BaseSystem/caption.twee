@@ -1,0 +1,41 @@
+:: SidebarTitle [widget]
+
+<<widget "sidetitle">>
+
+<div align="center">
+<img src="image/banner.png">
+<div id="story-title">失乐园物语</div>
+<div id="story-subtitle">Elysion World Adventure</div>
+</div>
+
+<</widget>>
+
+:: StoryCaption
+<div @class="(Errors.log.length==0?'hidden':'') + ' error-reporter-btn'" onclick="Errors.Reporter.toggle()"></div>
+
+这里是side bar<br>
+<br>
+
+<<if $intro is true >>
+<<versioninfo>>
+
+<<else>>
+
+/* 游戏菜单 */
+
+<<button STATUS>><<overlayReplace "status">><</button>>
+<<set $currentOverlay to null>>
+	<div id="customOverlay" class="customOverlay hidden" draggable="true">
+		<div id="customOverlayTitle" class="fixedClose"></div>
+		<div id="customOverlayContent"></div>
+	</div>
+
+<</if>>
+
+:: Status [widget]
+<<widget "status">>
+<li>角色名字： $PC.name<br></li>
+<li>等级： $PC.level<br></li>
+<</widget>>
+
+
